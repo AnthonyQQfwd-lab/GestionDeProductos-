@@ -1,0 +1,47 @@
+
+#generalContainer
+{
+    display: flex;
+}
+
+#leftsideContainer
+{
+    background-color: blueviolet;
+    width: 30%;
+}
+
+#rightsideContainer
+{
+    background-color: red;
+    width: 70%;
+    height: 100vh;
+}
+
+
+#inputItemCOnteiner
+{
+    background-color: aqua;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 33%
+    
+}
+
+#purchaseItemConteiner
+{
+    background-color: lightcoral;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 33%
+}
+
+#outputItemConteiner
+{
+    background-color: lightcyan;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 33%
+}

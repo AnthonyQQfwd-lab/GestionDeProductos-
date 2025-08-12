@@ -1,3 +1,34 @@
 {
-    "usuarios":[]
+  "productos": [
+    {
+      "id": "37ee",
+      "itemName": "Leche",
+      "itemPrice": "1000",
+      "itemStock": "1"
+    },
+    {
+      "id": "37ce",
+      "itemName": "Carne",
+      "itemPrice": "5000",
+      "itemStock": "2"
+    },
+    {
+      "id": "4d54",
+      "itemName": "1111111111",
+      "itemPrice": "22222222222",
+      "itemStock": "33333333333"
+    },
+    {
+      "id": "676e",
+      "itemName": "111111111111111",
+      "itemPrice": "2222222222222222",
+      "itemStock": "333333333333333333"
+    },
+    {
+      "id": "b93b",
+      "itemName": "111111111111111",
+      "itemPrice": "2222222222222222",
+      "itemStock": "333333333333333333"
+    }
+  ]
 }

@@ -1,34 +1,40 @@
-console.log("hola")
+import { getProductos } from "../services/servicesProductos.js"
+import {postProductos} from "../services/servicesProductos.js"
+
+console.log(getProductos())
 
 
-import {getUsers} from "../services/serviciosUsuarios.js"
 
-console.log(getUsers())
+const itemName = document.getElementById("itemName");
+const itemPrice = document.getElementById("itemPrice");
+const itemStock = document.getElementById("itemStock");
+const btninputItem = document.getElementById("inputItem");
+const itemsFatherContainer = document.getElementById("itemsFatherContainer")
 
-async function datosUsuarios() 
+btninputItem.addEventListener("click", async function()
 {
-    const datosrecibidos = await getUsers()
-    console.log(datosrecibidos)    
-}
-
-datosUsuarios() 
-
-
-const nombre = document.getElementById("nombre")
-const edad = document.getElementById("edad")
-const correo = document.getElementById("correo")
-const btnguardar = document.getElementById("guardar")
-
-
-btnguardar.addEventListener("click", async function()
-{
-    const user =
+    const producto =
     {
-        nombre: nombre.value,
-        edad: edad.value,
-        correo: correo.value
+        itemName: itemName.value,
+        itemPrice: itemPrice.value,
+        itemStock: itemStock.value
     }
 
-    console.log(user)
+    const respuestaConfirmada = await postProductos(producto)
 
+    console.log(producto)
+    datosproductos() 
 })
+
+async function datosproductos() 
+{
+    const itemTextName = document.createElement("p")
+
+    const productosRecibidos = await getProductos()
+    productosRecibidos.map(producto => itemTextName.textContent(producto) )
+    
+    itemsFatherContainer.appendChild(itemTextName)
+
+} 
+
+datosproductos() 

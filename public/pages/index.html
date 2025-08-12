@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-    <h1>Hola</h1>
 
-    <label for="">Nombre</label><br/>
-    <input id="nombre" type="text"><br/>
-    <label for="">Edad</label><br/>
-    <input id="edad" type="text"><br/>
-    <label for="">correo</label><br/>
-    <input id="correo" type="text"><br/>
+    <header><h1>Gestionador de productos</h1></header>
+    <div id="generalContainer">
 
-    <button id="guardar">Guardar</button>
+        <div id="leftsideContainer">
+            <div id="inputItemCOnteiner">
+                <p1>Ingresar producto</p1><br/>
+                <label for="">Nombre del producto</label><br/>
+                <input id="itemName" type="text"><br/>
+                <label for="">Precio del producto</label><br/>
+                <input id="itemPrice" type="number"><br/>
+                <label for="">Cantidad del producto</label><br/>
+                <input id="itemStock" type="number"><br/>
+                <button id="inputItem">Guardar</button>
+            </div><br/>
+
+            <div id="purchaseItemConteiner">
+                <p1>compra de producto</p1><br/>
+                <label for="">Nombre del producto</label><br/>
+                <input id="itemName" type="text"><br/>
+                <label for="">Precio del producto</label><br/>
+                <input id="itemPrice" type="number"><br/>
+                <label for="">Cantidad del producto</label><br/>
+                <input id="itemStock" type="number"><br/>
+                <button id="purchaseItem">Guardar</button>
+            </div><br/>
+
+            <div id="outputItemConteiner">
+                <p1>Retirar producto</p1><br/>
+                <label for="">Nombre del producto</label><br/>
+                <input id="itemName" type="text"><br/>
+                <label for="">Precio del producto</label><br/>
+                <input id="itemPrice" type="number"><br/>
+                <label for="">Cantidad del producto</label><br/>
+                <input id="itemStock" type="number"><br/>
+                <button id="outPutItem">Guardar</button>
+            </div><br/>
+        </div>
+        <div id="rightsideContainer">
+            <div id="itemsFatherContainer">
+                <h1>aqui ira los items </h1>
+            </div>
+        </div>
+
+    </div>
+
     <script type="module" src="../js/index.js"></script>
 </body>
 </html>
